@@ -1,0 +1,17 @@
+const solveRodCutting = function(lengths, prices, n) {
+
+    const recurse = (lengths, prices, n, index) => {
+        if (n <= 0 || index >= lengths.length) return 0
+
+        let profit1 = prices[index] + recurse(lengths, prices, n - lengths[index], index)
+        const profit2 = recurse(lengths, prices, n, index + 1)
+
+        return Math.max(profit1, profit2)
+    }
+
+    return recurse(lengths, prices, n, 0)
+};
+
+const lengths = [1, 2, 3, 4, 5];
+const prices = [2, 6, 7, 10, 13];
+console.log(`Maximum profit: ---> ${solveRodCutting(lengths, prices, 5)}`);
