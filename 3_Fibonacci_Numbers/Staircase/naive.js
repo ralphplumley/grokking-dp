@@ -1,3 +1,8 @@
+/*
+    Time: O(3^N) - we are making three recursive calls in the same function
+    Space: O(N) - for recursion
+ */
+
 const CountWays = function(n) {
     if (n === 0 || n === 1) return 1
     if (n === 2) return 2
