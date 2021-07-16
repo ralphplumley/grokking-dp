@@ -1,6 +1,6 @@
 /*
-    Time:
-    Space:
+    Time: O(N)
+    Space: O(N)
  */
 
 const CountWays = function(n) {
