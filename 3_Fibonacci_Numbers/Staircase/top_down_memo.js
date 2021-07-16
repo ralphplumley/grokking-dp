@@ -13,9 +13,9 @@ const CountWays = function(n) {
 
         if (typeof memo[n] === 'undefined') {
 
-            const count1 = CountWays(n-1)
-            const count2 = CountWays(n-2)
-            const count3 = CountWays(n-3)
+            const count1 = recur(n-1)
+            const count2 = recur(n-2)
+            const count3 = recur(n-3)
 
             memo[n] = count1 + count2 + count3
         }
