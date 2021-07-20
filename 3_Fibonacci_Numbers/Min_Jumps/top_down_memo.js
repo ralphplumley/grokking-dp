@@ -24,5 +24,6 @@ const countMinJumps = function(jumps) {
     return recurse(0)
 };
 
-console.log(`Minimum jumps needed: ---> ${countMinJumps([2, 1, 1, 1, 4])}`);
-console.log(`Minimum jumps needed: ---> ${countMinJumps([1, 1, 3, 6, 9, 3, 0, 1, 3])}`);
+// console.log(`Minimum jumps needed: ---> ${countMinJumps([2, 1, 1, 1, 4])}`);
+// console.log(`Minimum jumps needed: ---> ${countMinJumps([1, 1, 3, 6, 9, 3, 0, 1, 3])}`);
+console.log(`Minimum jumps needed: ---> ${countMinJumps([2, 3, 0, 1,4])}`);
