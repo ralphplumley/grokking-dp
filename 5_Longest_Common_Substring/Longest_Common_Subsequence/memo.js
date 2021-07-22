@@ -6,7 +6,7 @@ const findLCSLength = (s1, s2) => {
 
         memo[index1] = memo[index1] || []
         if (typeof memo[index1][index2] === 'undefined') {
-            if (s1[index1] === s2[index2]) return 1 + recurse(index1 + 1, index2 + 1)
+            if (s1[index1] === s2[index2]) memo[index1][index2] = 1 + recurse(index1 + 1, index2 + 1)
             else {
                 const c1 = recurse(index1, index2 + 1)
                 const c2 = recurse(index1 + 1, index2)
