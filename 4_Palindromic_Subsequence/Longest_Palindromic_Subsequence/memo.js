@@ -27,3 +27,4 @@ const LPS = (str) => {
 console.log("Length of LPS ---> " + LPS("abdbca"));
 console.log("Length of LPS ---> " + LPS("cddpd"));
 console.log("Length of LPS ---> " + LPS("pqr"))
+console.log("Length of LPS ---> " + LPS("a"))
