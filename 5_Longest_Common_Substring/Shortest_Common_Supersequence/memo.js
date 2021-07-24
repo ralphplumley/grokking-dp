@@ -24,7 +24,7 @@ const findSCSLength = function(str1, str2) {
 };
 
 console.log(
-    `Length of Shortest Common Subsequence: Substring: ---> ${findSCSLength('abcf', 'bdcf')}`
+    `Length of Shortest Common Subsequence: Substring: ---> ${findSCSLength('abac', 'cab')}`
 );
 console.log(
     `Length of Shortest Common Subsequence: Substring: ---> ${findSCSLength(
